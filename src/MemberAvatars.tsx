@@ -7,6 +7,8 @@ import './MemberAvatars.css';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
+export const blueColor = 'rgb(100, 215, 240)';
+
 type BandMemberCardProps = {
     name: string, 
     role: string, 
@@ -70,7 +72,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
             variant="subtitle1" 
             fontWeight="bold"
             style={{
-                color: 'rgba(100, 215, 240, 1)',
+                color: blueColor,
                 fontSize: 22,
             }}
           >
@@ -120,21 +122,22 @@ function MemberAvatars() {
         },
     ];
     return (
-        <div className='avatars-container' style={{marginBottom: 100}}>
-                {members.map((m) => (
-                    <BandMemberCard key={m.name} {...m} />
-                ))}
-        {/* <BandMemberCard
-            name="Etan Cohn"
-            role="Drums"
-            image={etanImg}
-            // image={Images.etan}
-            funFact="This is a fun fact about Etan."
-        /> */}
+        <div>
+            <Typography
+                variant='h2'
+                fontWeight='bold'
+                color={blueColor}
+                sx={{ textAlign: 'center' }}
+                style={{
+                    marginBottom: 15,
+                }}
+            >Meet The Band</Typography>
+            <div className='avatars-container' style={{marginBottom: 100}}>
+                    {members.map((m) => (
+                        <BandMemberCard key={m.name} {...m} />
+                    ))}
+            </div>
         </div>
-        // <div>
-        //     hiii
-        // </div>
     )
 }
 
