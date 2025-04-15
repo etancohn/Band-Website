@@ -3,6 +3,7 @@ import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import etanImg from './assets/etan-headshot.jpg';
+import './MemberAvatars.css';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
@@ -41,7 +42,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
             height: '100%',
             transition: 'transform 0.3s ease-in-out',
           }}
-        >E</Avatar>
+        ></Avatar>
         <Box
           className="overlay"
           sx={{
@@ -64,11 +65,25 @@ const BandMemberCard = (props: BandMemberCardProps) => {
         >
           <Typography variant="body2">{props.funFact}</Typography>
         </Box>
-        <Box sx={{ textAlign: 'center', mt: 1 }}>
-          <Typography variant="subtitle1" fontWeight="bold">
+        <Box sx={{ textAlign: 'center', mt: 0.5, mb: 0, lineHeight: 0.8 }}>
+          <Typography 
+            variant="subtitle1" 
+            fontWeight="bold"
+            style={{
+                color: 'rgba(100, 215, 240, 1)',
+                fontSize: 22,
+            }}
+          >
             {props.name}
           </Typography>
-          <Typography variant="caption" color="gray">
+          <Typography 
+            variant="caption" 
+            color="gray"
+            sx={{ mt: 0, lineHeight: 0.8 }}
+            style={{
+                fontSize: 16,
+            }}
+          >
             {props.role}
           </Typography>
         </Box>
@@ -78,15 +93,44 @@ const BandMemberCard = (props: BandMemberCardProps) => {
   
 
 function MemberAvatars() {
+    const members = [
+        {
+            name: 'Kaitlyn',
+            role: 'Vocals & Piano',
+            image: '#',
+            funFact: 'This is a fun fact about Kaitln.',
+        },
+        {
+            name: 'Adam',
+            role: 'Guitar',
+            image: '#',
+            funFact: 'This is a fun fact about Adam.',
+        },
+        {
+            name: 'Alex',
+            role: 'Bass',
+            image: '#',
+            funFact: 'This is a fun fact about Alex.',
+        },
+        {
+            name: 'Etan',
+            role: 'Drums',
+            image: etanImg,
+            funFact: 'This is a fun fact about Etan.',
+        },
+    ];
     return (
-        <div style={{marginBottom: 100}}>
-        <BandMemberCard
+        <div className='avatars-container' style={{marginBottom: 100}}>
+                {members.map((m) => (
+                    <BandMemberCard key={m.name} {...m} />
+                ))}
+        {/* <BandMemberCard
             name="Etan Cohn"
             role="Drums"
             image={etanImg}
             // image={Images.etan}
             funFact="This is a fun fact about Etan."
-        />
+        /> */}
         </div>
         // <div>
         //     hiii
