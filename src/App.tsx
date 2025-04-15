@@ -4,6 +4,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Slim bundle includes polygon shape and links
 import { SoundCloudPlayer, SoundCloudPlaylist } from './SoundCloudPlayer';
+import MemberAvatars from './MemberAvatars';
 
 function App() {
     const [init, setInit] = useState(false);
@@ -126,21 +127,10 @@ function App() {
             particlesLoaded={particlesLoaded}
             options={options} // Pass the polygon options
         />
-        {/* <div style={{ color: 'white', }}>HIII</div> */}
+        <MemberAvatars />
         <SoundCloudPlaylist
           playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
         />
-        {/* <iframe 
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https://soundcloud.com/etan-cohn-996334839/sets/boston-band&amp;">
-        </iframe> */}
-        {/* <SoundCloudPlayer 
-          trackUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
-          // trackUrl='https://soundcloud.com/nodoubt/just-a-girl' 
-        /> */}
       </div>
     );
 }
