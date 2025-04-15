@@ -7,7 +7,7 @@ import './MemberAvatars.css';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
-export const blueColor = 'rgb(100, 215, 240)';
+export const blueColor = 'rgb(100, 215, 240)'; // #64d6f0
 
 type BandMemberCardProps = {
     name: string, 
@@ -124,12 +124,12 @@ function MemberAvatars() {
     return (
         <div>
             <Typography
-                variant='h2'
+                variant='h3'
                 fontWeight='bold'
                 color={blueColor}
                 sx={{ textAlign: 'center' }}
                 style={{
-                    marginBottom: 15,
+                    marginBottom: 20,
                 }}
             >Meet The Band</Typography>
             <div className='avatars-container' style={{marginBottom: 100}}>

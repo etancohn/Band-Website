@@ -2,6 +2,6 @@
 
 .avatars-container {
     display: flex;
-    margin-bottom: 100;
+    /* margin-bottom: 2000px; */
     column-gap: 4rem;
 }
