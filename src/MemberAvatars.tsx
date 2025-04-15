@@ -80,7 +80,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
           <Typography 
             variant="caption" 
             color="gray"
-            sx={{ mt: 0, lineHeight: 0.8 }}
+            sx={{ mt: 0, lineHeight: 1 }}
             style={{
                 fontSize: 16,
             }}
@@ -109,7 +109,7 @@ function MemberAvatars() {
         },
         {
             name: 'Alex',
-            role: 'Bass',
+            role: 'Bass & Backing Vocals',
             image: '#',
             funFact: 'This is a fun fact about Alex.',
         },
