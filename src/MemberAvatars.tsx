@@ -96,10 +96,10 @@ const BandMemberCard = (props: BandMemberCardProps) => {
 function MemberAvatars() {
     const members = [
         {
-            name: 'Kaitlyn',
+            name: 'Katelyn',
             role: 'Vocals & Piano',
             image: '#',
-            funFact: 'This is a fun fact about Kaitlyn.',
+            funFact: 'This is a fun fact about Katelyn.',
         },
         {
             name: 'Adam',
