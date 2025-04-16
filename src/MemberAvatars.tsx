@@ -122,7 +122,7 @@ function MemberAvatars() {
     ];
     return (
         <div>
-            {/* <Typography
+            <Typography
                 variant='h3'
                 fontWeight='bold'
                 color={blueColor}
@@ -130,7 +130,7 @@ function MemberAvatars() {
                 style={{
                     marginBottom: 20,
                 }}
-            >Meet The Band</Typography> */}
+            >Meet The Band</Typography>
             <div className='avatars-container'>
                     {members.map((m) => (
                       <span className='band-member-item'>
