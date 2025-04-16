@@ -10,6 +10,27 @@ import { useEffect } from 'react';
 import BandPhoto from './BandPhoto';
 import ShowListItem from './ShowListItem';
 import { motion } from 'framer-motion';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Merriweather, serif', // Set Merriweather as the default body font
+    subtitle1: {
+      fontWeight: 'bold',
+      fontSize: 22,
+    },
+    caption: {
+      fontSize: 16,
+    },
+    // You can define specific styles for other variants if needed
+  },
+  palette: {
+    primary: {
+      main: blueColor, // Use your blue color in the palette
+    },
+    // ... other palette configurations
+  },
+});
 
 function App() {
 
@@ -32,6 +53,7 @@ function App() {
   }, []);
 
     return (
+      <ThemeProvider theme={theme}>
       <div className='app-container'>
         <div style={{ marginTop: 3 }}></div>
         <ParticlesBackground />
@@ -106,6 +128,7 @@ function App() {
 
         <div style={{ marginBottom: 100 }}></div>
       </div>
+      </ThemeProvider>
     );
 }
 
