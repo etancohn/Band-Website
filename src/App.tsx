@@ -7,6 +7,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS CSS
 import { useEffect } from 'react';
+import BandPhoto from './BandPhoto';
 
 function App() {
 
@@ -41,10 +42,13 @@ function App() {
             justifyContent: 'center',
           }}
         >
+          <BandPhoto />
           <div 
             style={{
               position: 'absolute',
-              bottom: 0,
+              bottom: -10,
+              // zIndex: 1000
+              // marginTop: 20,
             }}
           >
             <SocialMediaIcons />

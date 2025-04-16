@@ -40,6 +40,7 @@ function SocialMediaIcons() {
         color: blueColor,
         // color: '#333', // Default icon color
         margin: '0 10px', // Spacing between icons
+        // zIndex: 1000,
     };
     return (
         <motion.div 
