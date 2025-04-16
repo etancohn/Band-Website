@@ -1,6 +1,6 @@
 import './App.css';
 import { SoundCloudPlaylist } from './SoundCloudPlayer';
-import MemberAvatars from './MemberAvatars';
+import MemberAvatars, { blueColor } from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
 import SocialMediaIcons from './SocialMediaIcons';
@@ -9,14 +9,14 @@ import 'aos/dist/aos.css'; // Import the AOS CSS
 import { useEffect } from 'react';
 import BandPhoto from './BandPhoto';
 import ShowListItem from './ShowListItem';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function App() {
 
-  // const headerVariants = {
-  //   initial: { opacity: 0, y: -10 },
-  //   animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
-  // };
+  const headerVariants = {
+    initial: { opacity: 0, y: -10 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
+  };
 
   useEffect(() => {
     AOS.init({
@@ -58,7 +58,7 @@ function App() {
             <SocialMediaIcons />
           </div>
         </div>
-        {/* <div 
+        <div 
           style={{
             marginTop: 50,
             marginBottom: -100,
@@ -76,7 +76,7 @@ function App() {
           >
               Meet The Band
           </motion.h2>
-        </div> */}
+        </div>
         <div data-aos="fade-right" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
         </div>
@@ -104,7 +104,7 @@ function App() {
           <ShowListItem />
         {/* </div> */}
 
-        <div style={{ marginBottom: 40 }}></div>
+        <div style={{ marginBottom: 100 }}></div>
       </div>
     );
 }
