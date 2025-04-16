@@ -63,6 +63,7 @@ function ShowListItem() {
                 fontSize: '3rem',
                 color: blueColor,
                 marginBottom: -8,
+                textAlign: 'center',
             }}
         >
             Upcoming Shows
