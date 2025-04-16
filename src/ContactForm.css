@@ -1,4 +1,15 @@
 
+.contact-form-container {
+    margin-Top: 50px;
+    /* width: 50%; */
+    width: 42rem;
+    background-color: rgba(58, 58, 58, 0.5);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .box-container {
     display: flex;
     flex-direction: column;
@@ -17,16 +28,25 @@
     .contact-input {
         width: 25rem;
     }
+    .contact-form-container {
+        width: 30rem;
+    }
 }
 
 @media (max-width: 490px) {
     .contact-input {
         width: 22rem;
     }
+    .contact-form-container {
+        width: 25rem;
+    }
 }
 
 @media (max-width: 425px) {
     .contact-input {
         width: 18.5rem;
+    }
+    .contact-form-container {
+        width: 21rem;
     }
 }

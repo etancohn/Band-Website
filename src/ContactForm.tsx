@@ -26,15 +26,16 @@ function ContactForm() {
 
   return (
     <div
-        style={{ 
-        marginTop: 50,
-        width: '50%', 
-        backgroundColor: 'rgba(58, 58, 58, 0.5)',
-        borderRadius: 15,
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'center',
-        }}
+        className="contact-form-container"
+        // style={{ 
+        // marginTop: 50,
+        // width: '50%', 
+        // backgroundColor: 'rgba(58, 58, 58, 0.5)',
+        // borderRadius: 15,
+        // position: 'relative',
+        // display: 'flex',
+        // justifyContent: 'center',
+        // }}
         data-aos="fade-up" // Animate the entire container
         data-aos-duration="600" // Shorter duration for the container
     >
