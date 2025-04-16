@@ -64,7 +64,7 @@ function App() {
           style={{ 
             marginTop: 10,
             height: '69vh', 
-            width: '90%', 
+            width: '70%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
             borderRadius: 15,
             position: 'relative',
@@ -76,7 +76,7 @@ function App() {
           <div 
             style={{
               position: 'absolute',
-              bottom: 0,
+              bottom: -10,
             }}
           >
             <SocialMediaIcons />
