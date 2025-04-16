@@ -71,6 +71,12 @@
     background-color: gray;
 }
 
+@media (max-width: 1100px) {
+    .showList {
+        width: 90%;
+    }
+}
+
 /* 
 .show-list-item {
     width: 80%;
