@@ -19,7 +19,7 @@
 
 @media (max-width: 700px) {
     .avatars-container {
-        column-gap: 1rem;
+        column-gap: 2rem;
     }
 
     .band-member-item {
