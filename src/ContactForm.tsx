@@ -8,11 +8,6 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-//   const headerVariants = {
-//     initial: { opacity: 0, y: -10 },
-//     animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
-// };
-
   const handleSubmit = (event: any) => {
     event.preventDefault();
     // In a real implementation, you would send this data to your backend or a form service
@@ -27,15 +22,6 @@ function ContactForm() {
   return (
     <div
         className="contact-form-container"
-        // style={{ 
-        // marginTop: 50,
-        // width: '50%', 
-        // backgroundColor: 'rgba(58, 58, 58, 0.5)',
-        // borderRadius: 15,
-        // position: 'relative',
-        // display: 'flex',
-        // justifyContent: 'center',
-        // }}
         data-aos="fade-up" // Animate the entire container
         data-aos-duration="600" // Shorter duration for the container
     >
@@ -46,10 +32,6 @@ function ContactForm() {
         sx={{ mt: 2, mb: 4 }}
     >
         <h2
-                // variants={headerVariants}
-                // initial="initial"
-                // whileInView="animate"
-                // viewport={{ once: false }}
                 style={{
                     fontSize: '3rem',
                     color: 'white',
