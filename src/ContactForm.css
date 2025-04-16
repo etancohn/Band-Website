@@ -1,20 +1,32 @@
-  
-.submitButton {
-    /* background-color: blue; */
-    background-color: rgb(100, 215, 240);
-    color: black;
-    text-decoration: none;
-    padding: 15px 0px;
-    border-radius: 5px;
-    font-weight: bold;
-    /* transition: background-color 0.3s ease; */
-    font-size: 1.1rem;
-    border: 2px solid #3a3a3a;
-    box-shadow: 0 0 10px #3a3a3a;
-    text-align: center;
-    width: 15rem;
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.submitButton:hover {
-    cursor: pointer;
+.contact-input {
+    display: flex;
+    width: 32rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .contact-input {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .contact-input {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-input {
+        width: 18.5rem;
+    }
 }

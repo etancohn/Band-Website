@@ -29,7 +29,7 @@ function ContactForm() {
         style={{ 
         marginTop: 30,
         // height: '69vh', 
-        width: '90%', 
+        width: '50%', 
         backgroundColor: 'rgba(58, 58, 58, 0.5)',
         borderRadius: 15,
         position: 'relative',
@@ -37,7 +37,12 @@ function ContactForm() {
         justifyContent: 'center',
         }}
     >
-    <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2, mb: 4 }}>
+    <Box 
+        className='box-container'
+        component="form" 
+        onSubmit={handleSubmit} 
+        sx={{ mt: 2, mb: 4 }}
+    >
         <motion.h2
                 variants={headerVariants}
                 initial="initial"
@@ -54,6 +59,8 @@ function ContactForm() {
             >
                 Contact
         </motion.h2>
+
+    <div className="contact-input">
       <TextField
         fullWidth
         label="Subject"
@@ -63,8 +70,10 @@ function ContactForm() {
         margin="normal"
         required
       />
+    </div>
       <TextField
         fullWidth
+        className='contact-input'
         label="Email Address"
         id="email"
         type="email"
@@ -75,8 +84,9 @@ function ContactForm() {
       />
       <TextField
         fullWidth
+        className='contact-input'
         label="Message"
-        id="message"
+        // id="message"
         multiline
         rows={4}
         value={message}

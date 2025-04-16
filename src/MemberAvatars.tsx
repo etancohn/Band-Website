@@ -133,7 +133,10 @@ function MemberAvatars() {
             >Meet The Band</Typography> */}
             <div className='avatars-container'>
                     {members.map((m) => (
-                      <span className='band-member-item'>
+                      <span 
+                        key={m.name}
+                        className='band-member-item'
+                      >
                         <BandMemberCard 
                           key={m.name} 
                           name={m.name}
