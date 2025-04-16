@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { blueColor } from './MemberAvatars';
 
 function BandTitle() {
     const pathsData = [
@@ -30,22 +31,29 @@ function BandTitle() {
           opacity: 1,
           transition: {
             duration: 2, // Adjust as needed
+            // ease: 'easeIn'
             ease: "easeInOut",
           },
+        //   springy: { scale: 1.2, transition: { type: "spring", stiffness: 150, damping: 15 } },
         },
     };
 
     return (
-        <div style={{
-            width: '30%',
-            // backgroundColor: 'red',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            marginTop: 50,
-            // width: 'fit-content',
-        }}>
-            <svg viewBox="0 0 207 72"> {/* Adjust viewBox based on your SVG */}
+        // <div style={{
+        //     width: '30%',
+        //     // backgroundColor: 'red',
+        //     // display: 'block',
+        //     // marginLeft: 'auto',
+        //     // marginRight: 'auto',
+        //     // marginTop: 50,
+        //     // marginBottom: 100,
+        //     // position: 'absolute',
+        //     // width: 'fit-content',
+        // }}>
+            <svg 
+                viewBox="0 0 207 72"
+                width={500}
+            > {/* Adjust viewBox based on your SVG */}
                 {pathsData.map((path, index) => (
                     <motion.path
                     key={index}
@@ -53,14 +61,15 @@ function BandTitle() {
                     variants={pathVariants}
                     initial="hidden"
                     animate="visible"
-                    stroke="white"
+                    // stroke={blueColor}
+                    stroke='white'
                     // stroke="#000"
                     strokeWidth="2"
                     fill="transparent"
                     />
                 ))}
             </svg>
-        </div>
+        // </div>
     )
 }
 
