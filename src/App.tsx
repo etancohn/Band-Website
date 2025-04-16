@@ -32,7 +32,7 @@ function App() {
         <div
           style={{ 
             marginTop: 10,
-            height: '67vh', 
+            height: '69vh', 
             width: '90%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
             // opacity: 0.5,
@@ -46,7 +46,7 @@ function App() {
           <div 
             style={{
               position: 'absolute',
-              bottom: -10,
+              bottom: 0,
               // zIndex: 1000
               // marginTop: 20,
             }}

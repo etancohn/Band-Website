@@ -36,7 +36,7 @@ function SocialMediaIcons() {
     //   };
     
     const iconStyle = {
-        fontSize: '2.6rem', // Adjust size as needed
+        fontSize: '2.7rem', // Adjust size as needed
         color: blueColor,
         // color: '#333', // Default icon color
         margin: '0 10px', // Spacing between icons
