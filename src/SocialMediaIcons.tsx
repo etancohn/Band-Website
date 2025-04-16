@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { 
+    FaFacebook, 
+    FaInstagram, 
+    FaYoutube, 
+    // FaTiktok 
+} from 'react-icons/fa';
 import { BsSpotify } from 'react-icons/bs';
 import { blueColor } from './MemberAvatars';
 
@@ -84,6 +89,30 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <BsSpotify />
+          </motion.a>
+          {/* <motion.a
+            href='#'
+            // href="https://instagram.com/yourband" // Replace with your actual link
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            style={iconStyle}
+          >
+            <FaTiktok />
+          </motion.a> */}
+          <motion.a
+            href='#'
+            // href="https://instagram.com/yourband" // Replace with your actual link
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            style={iconStyle}
+          >
+            <FaYoutube />
           </motion.a>
           {/* Add more social media icons as needed */}
         </motion.div>
