@@ -11,6 +11,7 @@ import BandPhoto from './BandPhoto';
 import ShowListItem from './ShowListItem';
 import { motion } from 'framer-motion';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ContactForm from './ContactForm';
 
 const theme = createTheme({
   typography: {
@@ -28,6 +29,7 @@ const theme = createTheme({
     primary: {
       main: blueColor, // Use your blue color in the palette
     },
+    mode: 'dark',
     // ... other palette configurations
   },
 });
@@ -125,6 +127,8 @@ function App() {
         > */}
           <ShowListItem />
         {/* </div> */}
+
+        <ContactForm />
 
         <div style={{ marginBottom: 100 }}></div>
       </div>
