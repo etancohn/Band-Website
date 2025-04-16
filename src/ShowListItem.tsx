@@ -1,8 +1,11 @@
 // import React from 'react'
+import { motion } from 'framer-motion';
 import './ShowListItem.css';
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import { useEffect } from 'react';
+// import Typography from '@mui/material/Typography';
+import { blueColor } from './MemberAvatars';
 
 const showsData = [
     {
@@ -39,8 +42,42 @@ function ShowListItem() {
     //         anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
     //     });
     //   }, []);
+    const headerVariants = {
+        initial: { opacity: 0, y: -10 },
+        animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
+    };
 
     return (
+        <>
+        <div>
+        <motion.h2
+            variants={headerVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false }}
+            // animate="animate"
+            // initial={{ opacity: 0, y: -20 }} // Start invisible and slightly above
+            // animate={{ opacity: 1, y: 0 }}   // Animate to fully visible and original position
+            // transition={{ duration: 0.5, ease: "easeOut" }} // Adjust duration and easing
+            style={{
+                fontSize: '3rem',
+                color: blueColor,
+            }}
+        >
+            Upcoming Shows
+        </motion.h2>
+        </div>
+        {/* <Typography
+            variant='h3'
+            color={blueColor}
+            fontWeight='bold'
+            sx={{ textAlign: 'center' }}
+            style={{
+                marginBottom: -20,
+            }}
+        >
+            Upcoming Shows
+        </Typography> */}
         <ul className="showList">
         {showsData.map((show, index) => (
             <li 
@@ -73,6 +110,7 @@ function ShowListItem() {
         // <div className='show-list-item'>
         //     <div className="show-date">05/10</div>
         // </div>
+        </>
     )
 }
 

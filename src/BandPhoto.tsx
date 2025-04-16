@@ -4,7 +4,10 @@ import bandPhoto from "./assets/band-photo.jpg";
 function BandPhoto() {
     const photoVariants = {
         initial: { opacity: 0 },
-        animate: { opacity: 1, transition: { duration: 1 } }, // Adjust duration as needed
+        animate: { 
+          opacity: 1, 
+          transition: { duration: 1 },
+        }, // Adjust duration as needed
     };
 
     return (
