@@ -1,6 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { BsSpotify } from 'react-icons/bs';
 import { blueColor } from './MemberAvatars';
 

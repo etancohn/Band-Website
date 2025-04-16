@@ -1,6 +1,4 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { blueColor } from './MemberAvatars';
 
 function BandTitle() {
     const pathsData = [
