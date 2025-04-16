@@ -17,7 +17,7 @@ function ContactForm() {
     event.preventDefault();
     // In a real implementation, you would send this data to your backend or a form service
     console.log({ subject, email, message });
-    alert('Message sent (not really in this example)!');
+    alert('This will send an email once it is set up :)');
     // Optionally clear the form
     setSubject('');
     setEmail('');
@@ -28,7 +28,6 @@ function ContactForm() {
     <div
         style={{ 
         marginTop: 30,
-        // height: '69vh', 
         width: '50%', 
         backgroundColor: 'rgba(58, 58, 58, 0.5)',
         borderRadius: 15,
