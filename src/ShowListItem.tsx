@@ -62,22 +62,12 @@ function ShowListItem() {
             style={{
                 fontSize: '3rem',
                 color: blueColor,
+                marginBottom: -8,
             }}
         >
             Upcoming Shows
         </motion.h2>
         </div>
-        {/* <Typography
-            variant='h3'
-            color={blueColor}
-            fontWeight='bold'
-            sx={{ textAlign: 'center' }}
-            style={{
-                marginBottom: -20,
-            }}
-        >
-            Upcoming Shows
-        </Typography> */}
         <ul className="showList">
         {showsData.map((show, index) => (
             <li 
