@@ -31,14 +31,24 @@ function App() {
         <div
           style={{ 
             marginTop: 10,
-            height: '68vh', 
+            height: '67vh', 
             width: '80%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
             // opacity: 0.5,
             borderRadius: 15,
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
           }}
         >
+          <div 
+            style={{
+              position: 'absolute',
+              bottom: 15,
+            }}
+          >
             <SocialMediaIcons />
+          </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
