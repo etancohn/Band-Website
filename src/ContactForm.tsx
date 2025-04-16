@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { TextField, Button, Box } from '@mui/material';
 import { motion } from 'framer-motion';
+import './ContactForm.css';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
@@ -83,9 +84,37 @@ function ContactForm() {
         margin="normal"
         required
       />
-      <Button type="submit" variant="contained" color="primary">
-        Submit
-      </Button>
+      <div style={{ width: 300 }}>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        >
+          <Button
+            type="submit"
+            variant="contained" // Use contained for a filled button
+            sx={{
+              backgroundColor: 'rgb(100, 215, 240)', // Replace 'blue'
+              color: 'black',
+              textDecoration: 'none',
+              padding: '15px 0px',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+              fontSize: '1.1rem',
+              border: '2px solid #3a3a3a',
+              boxShadow: '0 0 10px #3a3a3a',
+              textAlign: 'center',
+              width: '15rem',
+              '&:hover': {
+                cursor: 'pointer',
+                // You can add hover background color change here if needed
+                // backgroundColor: 'darkblue',
+              },
+            }}
+          >
+            Submit
+          </Button>
+        </motion.div>
+      </div>
     </Box>
     </div>
   );
