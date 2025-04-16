@@ -44,13 +44,13 @@ function App() {
           <div 
             style={{
               position: 'absolute',
-              bottom: 15,
+              bottom: 0,
             }}
           >
             <SocialMediaIcons />
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" style={{ marginTop: 75 }}>
+        <div data-aos="fade-right" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
         </div>
         <div style={{ 
