@@ -61,16 +61,17 @@ function App() {
         <ParticlesBackground />
         <BandTitle />
         <div
-          style={{ 
-            marginTop: 10,
-            height: '69vh', 
-            width: '70%', 
-            backgroundColor: 'rgba(58, 58, 58, 0.5)',
-            borderRadius: 15,
-            position: 'relative',
-            display: 'flex',
-            justifyContent: 'center',
-          }}
+          className='band-photo-container'
+          // style={{ 
+          //   marginTop: 10,
+          //   height: '69vh', 
+          //   width: '70%', 
+          //   backgroundColor: 'rgba(58, 58, 58, 0.5)',
+          //   borderRadius: 15,
+          //   position: 'relative',
+          //   display: 'flex',
+          //   justifyContent: 'center',
+          // }}
         >
           <BandPhoto />
           <div 
