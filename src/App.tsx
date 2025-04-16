@@ -56,7 +56,7 @@ function App() {
         <div style={{ 
           width: '50%',
           marginTop: 130, 
-          minWidth: 350,
+          minWidth: 330,
           display: 'flex',
           justifyContent: 'center'
         }} data-aos="zoom-in">
