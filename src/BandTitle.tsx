@@ -40,7 +40,7 @@ function BandTitle() {
             <svg 
                 viewBox="0 0 207 72"
                 // width={500}
-                height={'20vh'}
+                height={'18vh'}
             > {/* Adjust viewBox based on your SVG */}
                 {pathsData.map((path, index) => (
                     <motion.path

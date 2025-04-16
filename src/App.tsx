@@ -53,12 +53,18 @@ function App() {
         <div data-aos="fade-up" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
         </div>
-        <div style={{ width: '50%', marginTop: 150, minWidth: '300px' }} data-aos="zoom-in">
+        <div style={{ 
+          width: '50%',
+          marginTop: 130, 
+          minWidth: 350,
+          display: 'flex',
+          justifyContent: 'center'
+        }} data-aos="zoom-in">
           <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
           />
         </div>
-        <div style={{ marginBottom: 20 }}></div>
+        <div style={{ marginBottom: 40 }}></div>
       </div>
     );
 }
