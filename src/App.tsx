@@ -33,7 +33,7 @@ function App() {
           style={{ 
             marginTop: 10,
             height: '67vh', 
-            width: '80%', 
+            width: '90%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
             // opacity: 0.5,
             borderRadius: 15,
