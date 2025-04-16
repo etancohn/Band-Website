@@ -3,6 +3,7 @@ import { SoundCloudPlaylist } from './SoundCloudPlayer';
 import MemberAvatars from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
+import SocialMediaIcons from './SocialMediaIcons';
 
 function App() {
 
@@ -14,15 +15,15 @@ function App() {
         <div
           style={{ 
             marginTop: 10,
-            height: 540, 
+            height: 535, 
             width: '80%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
-            // backgroundColor: 'red',
-            opacity: 0.5,
+            // opacity: 0.5,
             borderRadius: 15,
-            marginBottom: 10,
+            marginBottom: 50,
           }}
         >
+            <SocialMediaIcons />
         </div>
         <MemberAvatars />
         <SoundCloudPlaylist
