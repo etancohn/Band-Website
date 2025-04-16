@@ -99,7 +99,7 @@ function MemberAvatars() {
             name: 'Kaitlyn',
             role: 'Vocals & Piano',
             image: '#',
-            funFact: 'This is a fun fact about Kaitln.',
+            funFact: 'This is a fun fact about Kaitlyn.',
         },
         {
             name: 'Adam',

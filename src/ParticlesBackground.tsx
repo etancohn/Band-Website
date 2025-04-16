@@ -71,7 +71,7 @@ function ParticlesBackground() {
                         default: "bounce", // Bounce off canvas edges
                     },
                     random: true,    // Randomize movement direction
-                    speed: 1.1,        // Slow floating speed
+                    speed: 1.3,        // Slow floating speed
                     straight: false, // Particles move in non-straight lines
                 },
                 number: {
