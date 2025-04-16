@@ -1,8 +1,8 @@
 // import React from 'react'
 import './ShowListItem.css';
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const showsData = [
     {
@@ -27,13 +27,18 @@ const showsData = [
 ];
 
 function ShowListItem() {
-    useEffect(() => {
-        AOS.init({
-          duration: 800, // Adjust as needed
-          easing: 'ease-in-out',
-          once: true, // Only animate once on scroll
-        });
-      }, []);
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration: 800, // Adjust as needed
+    //         // easing: 'ease-in-out',
+    //         offset: 120, // Offset (in px) from the original trigger point
+    //         delay: 0, // Values from 0 to 3000, with step 50ms
+    //         easing: 'ease', // Default easing for AOS animations
+    //         once: false, // Whether animation should happen only once on scroll down
+    //         mirror: false, // Whether elements should animate out while scrolling past them
+    //         anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
+    //     });
+    //   }, []);
 
     return (
         <ul className="showList">
@@ -41,6 +46,8 @@ function ShowListItem() {
             <li 
                 key={index} 
                 className="showItem"
+                data-aos="fade-up"
+                // data-aos-delay={index * 100}
             >
                 <div className="showDetails">
                     <span className="showDate">
