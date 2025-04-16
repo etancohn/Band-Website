@@ -101,9 +101,6 @@ function ShowListItem() {
             </li>
         ))}
         </ul>
-        // <div className='show-list-item'>
-        //     <div className="show-date">05/10</div>
-        // </div>
         </>
     )
 }
