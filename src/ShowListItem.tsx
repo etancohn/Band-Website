@@ -70,7 +70,7 @@ function ShowListItem() {
             style={{
                 fontSize: '3rem',
                 color: blueColor,
-                marginBottom: -8,
+                marginBottom: 0,
                 textAlign: 'center',
             }}
         >
