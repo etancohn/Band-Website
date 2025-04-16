@@ -122,7 +122,7 @@ function MemberAvatars() {
     ];
     return (
         <div>
-            <Typography
+            {/* <Typography
                 variant='h3'
                 fontWeight='bold'
                 color={blueColor}
@@ -130,40 +130,8 @@ function MemberAvatars() {
                 style={{
                     marginBottom: 20,
                 }}
-            >Meet The Band</Typography>
+            >Meet The Band</Typography> */}
             <div className='avatars-container'>
-              {/* <div>
-                <BandMemberCard 
-                  key={members[0].name} 
-                  name={members[0].name}
-                  role={members[0].role}
-                  image={members[0].image}
-                  funFact={members[0].funFact}
-                />
-                <BandMemberCard 
-                  key={members[1].name} 
-                  name={members[1].name}
-                  role={members[1].role}
-                  image={members[1].image}
-                  funFact={members[1].funFact}
-                />
-              </div>
-              <div>
-                <BandMemberCard 
-                  key={members[2].name} 
-                  name={members[2].name}
-                  role={members[2].role}
-                  image={members[2].image}
-                  funFact={members[2].funFact}
-                />
-                <BandMemberCard 
-                  key={members[3].name} 
-                  name={members[3].name}
-                  role={members[3].role}
-                  image={members[3].image}
-                  funFact={members[3].funFact}
-                />
-              </div> */}
                     {members.map((m) => (
                       <span className='band-member-item'>
                         <BandMemberCard 

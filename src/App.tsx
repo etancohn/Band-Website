@@ -1,6 +1,6 @@
 import './App.css';
 import { SoundCloudPlaylist } from './SoundCloudPlayer';
-import MemberAvatars from './MemberAvatars';
+import MemberAvatars, { blueColor } from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
 import SocialMediaIcons from './SocialMediaIcons';
@@ -9,8 +9,14 @@ import 'aos/dist/aos.css'; // Import the AOS CSS
 import { useEffect } from 'react';
 import BandPhoto from './BandPhoto';
 import ShowListItem from './ShowListItem';
+import { motion } from 'framer-motion';
 
 function App() {
+
+  const headerVariants = {
+    initial: { opacity: 0, y: -10 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
+};
 
   useEffect(() => {
     AOS.init({
@@ -51,6 +57,25 @@ function App() {
           >
             <SocialMediaIcons />
           </div>
+        </div>
+        <div 
+          style={{
+            marginTop: 50,
+            marginBottom: -100,
+          }}
+        >
+          <motion.h2
+              variants={headerVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: false }}
+              style={{
+                  fontSize: '3rem',
+                  color: blueColor,
+              }}
+          >
+              Meet The Band
+          </motion.h2>
         </div>
         <div data-aos="fade-right" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
