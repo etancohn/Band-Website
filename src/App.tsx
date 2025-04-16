@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS CSS
 import { useEffect } from 'react';
 import BandPhoto from './BandPhoto';
+import ShowListItem from './ShowListItem';
 
 function App() {
 
@@ -35,7 +36,6 @@ function App() {
             height: '69vh', 
             width: '90%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
-            // opacity: 0.5,
             borderRadius: 15,
             position: 'relative',
             display: 'flex',
@@ -47,8 +47,6 @@ function App() {
             style={{
               position: 'absolute',
               bottom: 0,
-              // zIndex: 1000
-              // marginTop: 20,
             }}
           >
             <SocialMediaIcons />
@@ -60,14 +58,27 @@ function App() {
         <div style={{ 
           width: '50%',
           marginTop: 130, 
+          marginBottom: 20,
           minWidth: 330,
           display: 'flex',
-          justifyContent: 'center'
-        }} data-aos="zoom-in">
+          justifyContent: 'center',
+        }} data-aos="zoom-in"
+        >
           <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
           />
         </div>
+        {/* <div
+          style={{
+            marginTop: 50,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        > */}
+          <ShowListItem />
+        {/* </div> */}
+
         <div style={{ marginBottom: 40 }}></div>
       </div>
     );
