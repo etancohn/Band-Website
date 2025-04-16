@@ -35,6 +35,8 @@ function ContactForm() {
         display: 'flex',
         justifyContent: 'center',
         }}
+        data-aos="fade-up" // Animate the entire container
+        data-aos-duration="600" // Shorter duration for the container
     >
     <Box 
         className='box-container'
@@ -42,11 +44,11 @@ function ContactForm() {
         onSubmit={handleSubmit} 
         sx={{ mt: 2, mb: 4 }}
     >
-        <motion.h2
-                variants={headerVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: false }}
+        <h2
+                // variants={headerVariants}
+                // initial="initial"
+                // whileInView="animate"
+                // viewport={{ once: false }}
                 style={{
                     fontSize: '3rem',
                     color: 'white',
@@ -57,7 +59,7 @@ function ContactForm() {
                 }}
             >
                 Contact
-        </motion.h2>
+        </h2>
 
     <div className="contact-input">
       <TextField
