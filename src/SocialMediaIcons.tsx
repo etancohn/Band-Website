@@ -15,7 +15,7 @@ function SocialMediaIcons() {
           opacity: 1,
           y: 0,
           transition: {
-            delay: 1.5, // Adjust delay
+            delay: 1.2, // Adjust delay
             duration: 1.2,
             ease: 'easeOut',
             staggerChildren: 0.1, // Animate each icon with a slight delay

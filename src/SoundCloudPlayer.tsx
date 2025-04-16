@@ -29,7 +29,6 @@ export const SoundCloudPlaylist = (props: SoundCloudPlaylistProps) => {
   const { playlistUrl } = props;
   return <ReactPlayer 
     url={playlistUrl} 
-    width="40%" 
     height="330px" 
     config={{
         soundcloud: {

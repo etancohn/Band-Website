@@ -131,7 +131,7 @@ function MemberAvatars() {
                     marginBottom: 20,
                 }}
             >Meet The Band</Typography>
-            <div className='avatars-container' style={{marginBottom: 100}}>
+            <div className='avatars-container'>
                     {members.map((m) => (
                         <BandMemberCard key={m.name} {...m} />
                     ))}
