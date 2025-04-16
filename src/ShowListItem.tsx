@@ -9,19 +9,22 @@ import { blueColor } from './MemberAvatars';
 
 const showsData = [
     {
-      date: '2025-05-11',
+    //   date: '2025-05-11',
+      date: 'May 10, 2025',
       name: 'Porchfest',
       city: 'Somerville, MA',
       link: '#',
     },
     {
-      date: '2025-06-23',
+    //   date: '2025-06-23',
+      date: 'Date TBD',
       name: 'The Lilypad',
       city: 'Cambridge, MA',
       link: '#',
     },
     {
-      date: '2025-07-15',
+    //   date: '2025-07-15',
+      date: 'Date TBD',
       name: 'The Lilypad',
       city: 'Cambridge, MA',
       link: '#',
@@ -87,11 +90,12 @@ function ShowListItem() {
             >
                 <div className="showDetails">
                     <span className="showDate">
-                        {new Date(show.date).toLocaleDateString(undefined, {
+                        { show.date }
+                        {/* {new Date(show.date).toLocaleDateString(undefined, {
                             year: 'numeric',
                             month: 'short',
                             day: 'numeric',
-                        })}
+                        })} */}
                     </span>
                     <h3 className="showName">{show.name}</h3>
                 </div>

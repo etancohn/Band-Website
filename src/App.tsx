@@ -130,7 +130,7 @@ function App() {
 
         <ContactForm />
 
-        <div style={{ marginBottom: 60 }}></div>
+        <div style={{ marginBottom: 50 }}></div>
       </div>
       </ThemeProvider>
     );
