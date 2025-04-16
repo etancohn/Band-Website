@@ -24,7 +24,7 @@ const showsData = [
       date: '2025-07-15',
       name: 'The Lilypad',
       city: 'Cambridge, MA',
-      link: '',
+      link: '#',
     },
     // Add more show data here
 ];

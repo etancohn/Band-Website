@@ -59,6 +59,8 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
+    border: 2px solid #3a3a3a;
+    box-shadow: 0 0 10px #3a3a3a;
 }
   
 .showButton:hover {
