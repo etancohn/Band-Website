@@ -56,9 +56,9 @@
 }
   
 .showButton:hover {
-    background-color: darkblue;
+    /* background-color: darkblue; */
     cursor: pointer;
-    color: white;
+    /* color: white; */
 }
   
 .divider {

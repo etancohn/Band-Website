@@ -87,9 +87,13 @@ function ShowListItem() {
                     <h3 className="showName">{show.name}</h3>
                 </div>
                 <span className="showCity">{show.city}</span>
-                <div className="showButton">
+                <motion.div 
+                    className="showButton"
+                    whileHover={{ scale: 1.05 }} // Define the scale animation on hover
+                    transition={{ duration: 0.2 }} // Add a smooth transition
+                >
                     Link
-                </div>
+                </motion.div>
             {/* <Link to={show.link} className="showButton">
                 Tickets
             </Link> */}
