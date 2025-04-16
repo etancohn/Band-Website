@@ -37,20 +37,10 @@ function BandTitle() {
     };
 
     return (
-        // <div style={{
-        //     width: '30%',
-        //     // backgroundColor: 'red',
-        //     // display: 'block',
-        //     // marginLeft: 'auto',
-        //     // marginRight: 'auto',
-        //     // marginTop: 50,
-        //     // marginBottom: 100,
-        //     // position: 'absolute',
-        //     // width: 'fit-content',
-        // }}>
             <svg 
                 viewBox="0 0 207 72"
-                width={500}
+                // width={500}
+                height={'20vh'}
             > {/* Adjust viewBox based on your SVG */}
                 {pathsData.map((path, index) => (
                     <motion.path
@@ -67,7 +57,6 @@ function BandTitle() {
                     />
                 ))}
             </svg>
-        // </div>
     )
 }
 

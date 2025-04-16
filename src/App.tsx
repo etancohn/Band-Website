@@ -31,7 +31,7 @@ function App() {
         <div
           style={{ 
             marginTop: 10,
-            height: 535, 
+            height: '68vh', 
             width: '80%', 
             backgroundColor: 'rgba(58, 58, 58, 0.5)',
             // opacity: 0.5,
