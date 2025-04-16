@@ -58,7 +58,7 @@ function ParticlesBackground() {
                 color: {
                   // value: ["#FF6B6B", "#4ECDC4", "#45B7D1", "#F6AE2D", "#FFFFFF"],
                     // value: "#1b1c1d", // Color of the polygons
-                    value: '#3a3a3a',
+                    value: '#3a3a3a',  // rgb(58, 58, 58)
                 },
                 collisions: {
                   enable: true,

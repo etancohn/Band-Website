@@ -22,7 +22,7 @@ const showsData = [
     },
     {
       date: '2025-07-15',
-      name: 'The Lilypaddjfdpfjaidfapsd jfopjpjiopj',
+      name: 'The Lilypad',
       city: 'Cambridge, MA',
       link: '',
     },
