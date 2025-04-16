@@ -37,7 +37,7 @@ function ContactForm() {
         justifyContent: 'center',
         }}
     >
-    <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2, mb: 2 }}>
+    <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2, mb: 4 }}>
         <motion.h2
                 variants={headerVariants}
                 initial="initial"
@@ -104,6 +104,7 @@ function ContactForm() {
               boxShadow: '0 0 10px #3a3a3a',
               textAlign: 'center',
               width: '15rem',
+              marginTop: '0.5rem',
               '&:hover': {
                 cursor: 'pointer',
                 // You can add hover background color change here if needed
