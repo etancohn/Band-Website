@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "framer-motion": "^12.7.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-player": "^2.16.0"
