@@ -8,10 +8,10 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const headerVariants = {
-    initial: { opacity: 0, y: -10 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
-};
+//   const headerVariants = {
+//     initial: { opacity: 0, y: -10 },
+//     animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
+// };
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -27,7 +27,7 @@ function ContactForm() {
   return (
     <div
         style={{ 
-        marginTop: 30,
+        marginTop: 50,
         width: '50%', 
         backgroundColor: 'rgba(58, 58, 58, 0.5)',
         borderRadius: 15,
@@ -115,7 +115,7 @@ function ContactForm() {
               boxShadow: '0 0 10px #3a3a3a',
               textAlign: 'center',
               width: '15rem',
-              marginTop: '0.5rem',
+              marginTop: '0.6rem',
               '&:hover': {
                 cursor: 'pointer',
                 // You can add hover background color change here if needed
