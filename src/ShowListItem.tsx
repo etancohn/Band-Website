@@ -22,7 +22,7 @@ const showsData = [
     },
     {
       date: '2025-07-15',
-      name: 'The Lilypad',
+      name: 'The Lilypaddjfdpfjaidfapsd jfopjpjiopj',
       city: 'Cambridge, MA',
       link: '',
     },
@@ -48,7 +48,15 @@ function ShowListItem() {
     };
 
     return (
-        <>
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100vw',
+            }}
+        >
         <div>
         <motion.h2
             variants={headerVariants}
@@ -102,7 +110,7 @@ function ShowListItem() {
             </li>
         ))}
         </ul>
-        </>
+        </div>
     )
 }
 

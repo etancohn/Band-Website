@@ -20,6 +20,7 @@
 .showDetails {
     flex-grow: 1;
     /* min-width: 5000; */
+    min-width: 8rem;
 }
   
 .showDate {
@@ -73,7 +74,20 @@
 
 @media (max-width: 1100px) {
     .showList {
-        width: 90%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 700px) {
+    .showCity {
+        margin-right: 0.5rem;
+        font-size: 1.1rem;
+    }
+    .showButton {
+        padding: 15px 25px;
+    }
+    .showCity {
+        display: none;
     }
 }
 
