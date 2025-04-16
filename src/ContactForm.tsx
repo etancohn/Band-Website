@@ -1,10 +1,16 @@
 import { useState } from 'react';
 import { TextField, Button, Box } from '@mui/material';
+import { motion } from 'framer-motion';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  const headerVariants = {
+    initial: { opacity: 0, y: -10 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
+};
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -31,6 +37,22 @@ function ContactForm() {
         }}
     >
     <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2, mb: 2 }}>
+        <motion.h2
+                variants={headerVariants}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: false }}
+                style={{
+                    fontSize: '3rem',
+                    color: 'white',
+                    // color: blueColor,
+                    marginTop: 0,
+                    marginBottom: 0,
+                    textAlign: 'center',
+                }}
+            >
+                Contact
+        </motion.h2>
       <TextField
         fullWidth
         label="Subject"
