@@ -3,25 +3,30 @@ import { TextField, Button, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import './ContactForm.css';
 import { sendEmailToEtan } from './Api';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: any) {
     event.preventDefault();
     // In a real implementation, you would send this data to your backend or a form service
     console.log({ subject, email, message });
+    setLoading(true);
     const question = await sendEmailToEtan(email, subject, message);
     console.log("QUESTION: ", question)
+    setLoading(false);
 
     // alert('This will send an email once it is set up :)');
-    alert('Message sent successfully. You should hear back from us soon :)');
+
     // Optionally clear the form
     setSubject('');
     setEmail('');
     setMessage('');
+    alert('Message sent successfully. You should hear back from us soon :)');
   };
 
   return (
@@ -117,7 +122,13 @@ function ContactForm() {
               },
             }}
           >
-            Submit
+            {/* Submit */}
+            {/* Conditional rendering: Show spinner when loading, otherwise show text */}
+            {loading ? (
+              <CircularProgress size={24} color="inherit" />
+            ) : (
+              'Submit'
+            )}
           </Button>
         </motion.div>
       </div>
