@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import etanImg from './assets/etan-headshot.jpg';
 import './MemberAvatars.css';
-import { mainColor } from './Colors';
+import { mainColor, shadowColor } from './Colors';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
@@ -22,8 +22,8 @@ const BandMemberCard = (props: BandMemberCardProps) => {
           width: 128,
           height: 128,
           mx: 'auto',
-          border: '2px solid #3a3a3a',
-          boxShadow: '0 0 10px #3a3a3a',
+          border: `2px solid ${shadowColor}`,
+          boxShadow: `0 0 10px ${shadowColor}`,
           borderRadius: '50%',
           '&:hover .overlay': {
             opacity: 1,

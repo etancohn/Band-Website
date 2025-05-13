@@ -5,7 +5,7 @@ import './ShowListItem.css';
 import 'aos/dist/aos.css';
 // import { useEffect } from 'react';
 // import Typography from '@mui/material/Typography';
-import { mainColor } from './Colors';
+import { mainColor, shadowColor } from './Colors';
 
 const showsData = [
     {
@@ -87,6 +87,9 @@ function ShowListItem() {
                     className="showButton"
                     style={{
                         backgroundColor: mainColor,
+                        border: `2px solid ${shadowColor}`,
+                        boxShadow: `0 0 10px ${shadowColor}`,
+                        color: '#F5F5F5'
                     }}
                     whileHover={{ scale: 1.05 }} // Define the scale animation on hover
                     transition={{ duration: 0.2 }} // Add a smooth transition

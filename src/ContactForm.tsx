@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import './ContactForm.css';
 import { sendEmailToEtan } from './Api';
 import CircularProgress from '@mui/material/CircularProgress';
-import { mainColor } from './Colors';
+import { mainColor, shadowColor } from './Colors';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
@@ -104,14 +104,15 @@ function ContactForm() {
             variant="contained" // Use contained for a filled button
             sx={{
               backgroundColor: mainColor,
-              color: 'black',
+              // color: 'black',
+              color: '#F5F5F5',
               textDecoration: 'none',
               padding: '15px 0px',
               borderRadius: '5px',
               fontWeight: 'bold',
               fontSize: '1.1rem',
-              border: '2px solid #3a3a3a',
-              boxShadow: '0 0 10px #3a3a3a',
+              border: `2px solid ${shadowColor}`,
+              boxShadow: `0 0 10px ${shadowColor}`,
               textAlign: 'center',
               width: '15rem',
               marginTop: '0.6rem',
@@ -123,7 +124,6 @@ function ContactForm() {
               },
             }}
           >
-            {/* Submit */}
             {/* Conditional rendering: Show spinner when loading, otherwise show text */}
             {loading ? (
               <CircularProgress size={24} color="inherit" />

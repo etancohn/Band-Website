@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { titleColor } from './Colors';
 
 function BandTitle() {
     const pathsData = [
@@ -50,7 +51,8 @@ function BandTitle() {
                     initial="hidden"
                     animate="visible"
                     // stroke={blueColor}
-                    stroke='white'
+                    // stroke='white'
+                    stroke={titleColor}
                     // stroke="#000"
                     strokeWidth="2"
                     fill="transparent"

@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Slim bundle includes polygon shape and links
+import { particleColor, shadowColor } from './Colors';
 
 function ParticlesBackground() {
     const [init, setInit] = useState(false);
@@ -58,7 +59,7 @@ function ParticlesBackground() {
                 color: {
                   // value: ["#FF6B6B", "#4ECDC4", "#45B7D1", "#F6AE2D", "#FFFFFF"],
                     // value: "#1b1c1d", // Color of the polygons
-                    value: '#3a3a3a',  // rgb(58, 58, 58)
+                    value: particleColor,  // rgb(58, 58, 58)
                 },
                 collisions: {
                   enable: true,

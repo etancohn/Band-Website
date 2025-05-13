@@ -11,7 +11,7 @@ import { mainColor } from './Colors';
 function SocialMediaIcons() {
     const iconVariants = {
         initial: { scale: 1, opacity: 0.8 },
-        hover: { scale: 1.1, opacity: 1, transition: { duration: 0.2 } },
+        hover: { scale: 1.12, opacity: 1, transition: { duration: 0.2 } },
     };
 
     const containerVariants = {
@@ -27,23 +27,10 @@ function SocialMediaIcons() {
           },
         },
       };
-
-    // const containerVariants = {
-    //     hidden: { opacity: 0 },
-    //     visible: {
-    //       opacity: 1,
-    //       transition: {
-    //         delay: 1, // Adjust this delay to wait for your band name animation to finish (in seconds)
-    //         duration: 2.5, // Duration of the fade-in
-    //         ease: 'easeOut',
-    //       },
-    //     },
-    //   };
     
     const iconStyle = {
-        fontSize: '2.7rem', // Adjust size as needed
+        fontSize: '2.8rem', // Adjust size as needed
         color: mainColor,
-        // color: '#333', // Default icon color
         margin: '0 10px', // Spacing between icons
         // zIndex: 1000,
     };
