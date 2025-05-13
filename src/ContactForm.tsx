@@ -2,17 +2,22 @@ import { useState } from 'react';
 import { TextField, Button, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import './ContactForm.css';
+import { sendEmailToEtan } from './Api';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event: any) => {
+  async function handleSubmit(event: any) {
     event.preventDefault();
     // In a real implementation, you would send this data to your backend or a form service
     console.log({ subject, email, message });
-    alert('This will send an email once it is set up :)');
+    const question = await sendEmailToEtan(email, subject, message);
+    console.log("QUESTION: ", question)
+
+    // alert('This will send an email once it is set up :)');
+    alert('Message sent successfully. You should hear back from us soon :)');
     // Optionally clear the form
     setSubject('');
     setEmail('');
@@ -82,6 +87,11 @@ function ContactForm() {
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: '32rem',
+          }}
         >
           <Button
             type="submit"
@@ -99,6 +109,7 @@ function ContactForm() {
               textAlign: 'center',
               width: '15rem',
               marginTop: '0.6rem',
+              alignSelf: 'center',
               '&:hover': {
                 cursor: 'pointer',
                 // You can add hover background color change here if needed
