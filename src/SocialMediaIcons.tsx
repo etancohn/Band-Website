@@ -6,7 +6,7 @@ import {
     // FaTiktok 
 } from 'react-icons/fa';
 import { BsSpotify } from 'react-icons/bs';
-import { mainColor } from './MemberAvatars';
+import { mainColor } from './Colors';
 
 function SocialMediaIcons() {
     const iconVariants = {

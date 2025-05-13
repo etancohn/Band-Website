@@ -5,7 +5,7 @@ import './ShowListItem.css';
 import 'aos/dist/aos.css';
 // import { useEffect } from 'react';
 // import Typography from '@mui/material/Typography';
-import { mainColor } from './MemberAvatars';
+import { mainColor } from './Colors';
 
 const showsData = [
     {

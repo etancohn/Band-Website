@@ -3,11 +3,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import etanImg from './assets/etan-headshot.jpg';
 import './MemberAvatars.css';
+import { mainColor } from './Colors';
 // // @ts-ignore
 // import Images from './assets/Images.js';
-
-export const mainColor = 'rgb(100, 215, 240)'; // #64d6f0
-// export const mainColor = 'rgb(234, 51, 135)';
 
 type BandMemberCardProps = {
     name: string, 

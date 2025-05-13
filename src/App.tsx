@@ -1,6 +1,6 @@
 import './App.css';
 import { SoundCloudPlaylist } from './SoundCloudPlayer';
-import MemberAvatars, { mainColor as mainColor } from './MemberAvatars';
+import MemberAvatars from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
 import SocialMediaIcons from './SocialMediaIcons';
@@ -12,28 +12,7 @@ import ShowListItem from './ShowListItem';
 import { motion } from 'framer-motion';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ContactForm from './ContactForm';
-
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Merriweather, serif', // Set Merriweather as the default body font
-    subtitle1: {
-      fontWeight: 'bold',
-      fontSize: 22,
-    },
-    caption: {
-      fontSize: 16,
-    },
-    // You can define specific styles for other variants if needed
-  },
-  palette: {
-    primary: {
-      // main: 'red'
-      main: mainColor, // Use your blue color in the palette
-    },
-    mode: 'dark',
-    // ... other palette configurations
-  },
-});
+import { mainColor, theme } from './Colors';
 
 function App() {
 
@@ -63,16 +42,6 @@ function App() {
         <BandTitle />
         <div
           className='band-photo-container'
-          // style={{ 
-          //   marginTop: 10,
-          //   height: '69vh', 
-          //   width: '70%', 
-          //   backgroundColor: 'rgba(58, 58, 58, 0.5)',
-          //   borderRadius: 15,
-          //   position: 'relative',
-          //   display: 'flex',
-          //   justifyContent: 'center',
-          // }}
         >
           <BandPhoto />
           <div 

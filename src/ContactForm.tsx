@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import './ContactForm.css';
 import { sendEmailToEtan } from './Api';
 import CircularProgress from '@mui/material/CircularProgress';
-import { mainColor } from './MemberAvatars';
+import { mainColor } from './Colors';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
