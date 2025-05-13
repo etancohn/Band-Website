@@ -1,6 +1,6 @@
 import './App.css';
 import { SoundCloudPlaylist } from './SoundCloudPlayer';
-import MemberAvatars, { blueColor } from './MemberAvatars';
+import MemberAvatars, { mainColor as mainColor } from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
 import SocialMediaIcons from './SocialMediaIcons';
@@ -27,7 +27,8 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: blueColor, // Use your blue color in the palette
+      // main: 'red'
+      main: mainColor, // Use your blue color in the palette
     },
     mode: 'dark',
     // ... other palette configurations
@@ -96,7 +97,7 @@ function App() {
               viewport={{ once: false }}
               style={{
                   fontSize: '3rem',
-                  color: blueColor,
+                  color: mainColor,
               }}
           >
               Meet The Band

@@ -17,10 +17,10 @@
     /* background-color: red; */
 }
 
-.showItem:hover {
-    /* cursor: pointer; */
+/* .showItem:hover {
+    cursor: pointer;
     background-color: rgba(58, 58, 58, 0.2);
-}
+} */
   
 .showDetails {
     flex-grow: 1;
@@ -51,7 +51,7 @@
   
 .showButton {
     /* background-color: blue; */
-    background-color: rgb(100, 215, 240);
+    /* background-color: rgb(100, 215, 240); */
     color: black;
     text-decoration: none;
     padding: 15px 35px;

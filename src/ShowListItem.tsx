@@ -5,7 +5,7 @@ import './ShowListItem.css';
 import 'aos/dist/aos.css';
 // import { useEffect } from 'react';
 // import Typography from '@mui/material/Typography';
-import { blueColor } from './MemberAvatars';
+import { mainColor } from './MemberAvatars';
 
 const showsData = [
     {
@@ -33,18 +33,6 @@ const showsData = [
 ];
 
 function ShowListItem() {
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 800, // Adjust as needed
-    //         // easing: 'ease-in-out',
-    //         offset: 120, // Offset (in px) from the original trigger point
-    //         delay: 0, // Values from 0 to 3000, with step 50ms
-    //         easing: 'ease', // Default easing for AOS animations
-    //         once: false, // Whether animation should happen only once on scroll down
-    //         mirror: false, // Whether elements should animate out while scrolling past them
-    //         anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
-    //     });
-    //   }, []);
     const headerVariants = {
         initial: { opacity: 0, y: -10 },
         animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }, // Adjust duration as needed
@@ -72,7 +60,7 @@ function ShowListItem() {
             // transition={{ duration: 0.5, ease: "easeOut" }} // Adjust duration and easing
             style={{
                 fontSize: '3rem',
-                color: blueColor,
+                color: mainColor,
                 marginBottom: 0,
                 textAlign: 'center',
             }}
@@ -91,25 +79,20 @@ function ShowListItem() {
                 <div className="showDetails">
                     <span className="showDate">
                         { show.date }
-                        {/* {new Date(show.date).toLocaleDateString(undefined, {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric',
-                        })} */}
                     </span>
                     <h3 className="showName">{show.name}</h3>
                 </div>
                 <span className="showCity">{show.city}</span>
                 <motion.div 
                     className="showButton"
+                    style={{
+                        backgroundColor: mainColor,
+                    }}
                     whileHover={{ scale: 1.05 }} // Define the scale animation on hover
                     transition={{ duration: 0.2 }} // Add a smooth transition
                 >
                     Link
                 </motion.div>
-            {/* <Link to={show.link} className="showButton">
-                Tickets
-            </Link> */}
             {index < showsData.length - 1 && <div className="divider"></div>}
             </li>
         ))}

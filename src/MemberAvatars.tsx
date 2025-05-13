@@ -6,7 +6,8 @@ import './MemberAvatars.css';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
-export const blueColor = 'rgb(100, 215, 240)'; // #64d6f0
+export const mainColor = 'rgb(100, 215, 240)'; // #64d6f0
+// export const mainColor = 'rgb(234, 51, 135)';
 
 type BandMemberCardProps = {
     name: string, 
@@ -71,7 +72,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
             variant="subtitle1" 
             fontWeight="bold"
             style={{
-                color: blueColor,
+                color: mainColor,
                 fontSize: 22,
             }}
           >
@@ -122,15 +123,6 @@ function MemberAvatars() {
     ];
     return (
         <div>
-            {/* <Typography
-                variant='h3'
-                fontWeight='bold'
-                color={blueColor}
-                sx={{ textAlign: 'center' }}
-                style={{
-                    marginBottom: 20,
-                }}
-            >Meet The Band</Typography> */}
             <div className='avatars-container'>
                     {members.map((m) => (
                       <span 

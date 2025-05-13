@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import './ContactForm.css';
 import { sendEmailToEtan } from './Api';
 import CircularProgress from '@mui/material/CircularProgress';
+import { mainColor } from './MemberAvatars';
 
 function ContactForm() {
   const [subject, setSubject] = useState('');
@@ -102,7 +103,7 @@ function ContactForm() {
             type="submit"
             variant="contained" // Use contained for a filled button
             sx={{
-              backgroundColor: 'rgb(100, 215, 240)', // Replace 'blue'
+              backgroundColor: mainColor,
               color: 'black',
               textDecoration: 'none',
               padding: '15px 0px',

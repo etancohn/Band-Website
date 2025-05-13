@@ -6,7 +6,7 @@ import {
     // FaTiktok 
 } from 'react-icons/fa';
 import { BsSpotify } from 'react-icons/bs';
-import { blueColor } from './MemberAvatars';
+import { mainColor } from './MemberAvatars';
 
 function SocialMediaIcons() {
     const iconVariants = {
@@ -42,7 +42,7 @@ function SocialMediaIcons() {
     
     const iconStyle = {
         fontSize: '2.7rem', // Adjust size as needed
-        color: blueColor,
+        color: mainColor,
         // color: '#333', // Default icon color
         margin: '0 10px', // Spacing between icons
         // zIndex: 1000,
