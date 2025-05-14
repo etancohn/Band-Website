@@ -17,8 +17,8 @@ function ContactForm() {
     // In a real implementation, you would send this data to your backend or a form service
     console.log({ subject, email, message });
     setLoading(true);
-    const question = await sendEmailToEtan(email, subject, message);
-    console.log("QUESTION: ", question)
+    const response = await sendEmailToEtan(email, subject, message);
+    console.log("RESP: ", response)
     setLoading(false);
 
     // alert('This will send an email once it is set up :)');
@@ -93,11 +93,12 @@ function ContactForm() {
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            width: '32rem',
-          }}
+          className='contact-input'
+          // style={{
+          //   // display: 'flex',
+          //   // justifyContent: 'center',
+          //   // width: '32rem',
+          // }}
         >
           <Button
             type="submit"
