@@ -59,7 +59,7 @@ function ShowListItem() {
             // animate={{ opacity: 1, y: 0 }}   // Animate to fully visible and original position
             // transition={{ duration: 0.5, ease: "easeOut" }} // Adjust duration and easing
             style={{
-                fontSize: '3rem',
+                fontSize: '2.8rem',
                 color: mainColor,
                 marginBottom: 0,
                 textAlign: 'center',
