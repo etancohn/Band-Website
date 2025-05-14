@@ -33,7 +33,7 @@
     display: block;
     margin-bottom: 5px;
     font-size: 1.1rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
   
 .showName {
@@ -41,7 +41,7 @@
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
   
 .showCity {
@@ -61,7 +61,7 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     /* border: 2px solid #3a3a3a;
     box-shadow: 0 0 10px #3a3a3a; */
 }
