@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import BandPhoto from './BandPhoto';
 import ShowListItem from './ShowListItem';
 import { motion } from 'framer-motion';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import ContactForm from './ContactForm';
 import { mainColor, theme } from './Colors';
 

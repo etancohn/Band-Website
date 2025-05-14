@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Slim bundle includes polygon shape and links
-import { particleColor, shadowColor } from './Colors';
+import { particleColor } from './Colors';
 
 function ParticlesBackground() {
     const [init, setInit] = useState(false);
