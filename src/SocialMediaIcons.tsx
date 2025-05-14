@@ -29,9 +29,9 @@ function SocialMediaIcons() {
       };
     
     const iconStyle = {
-        fontSize: '2.8rem', // Adjust size as needed
+        fontSize: '2.9rem', // Adjust size as needed
         color: mainColor,
-        margin: '0 10px', // Spacing between icons
+        margin: '-7px 10px', // Spacing between icons
         // zIndex: 1000,
     };
     return (
