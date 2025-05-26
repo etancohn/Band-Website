@@ -75,28 +75,45 @@ function App() {
         <div data-aos="fade-right" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
         </div>
+
+        <div
+          style={{
+            width: '50%',
+            marginTop: 130,
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+        <motion.h2
+              variants={headerVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: false }}
+              style={{
+                  fontSize: '3rem',
+                  color: mainColor,
+              }}
+          >
+              Demo Tracks
+        </motion.h2>
         <div style={{ 
-          width: '50%',
-          marginTop: 130, 
+          // width: '50%',
+          // marginTop: 130, 
           marginBottom: 20,
           minWidth: 330,
-          display: 'flex',
-          justifyContent: 'center',
+          // display: 'flex',
+          // justifyContent: 'center',
         }} data-aos="zoom-in"
         >
           <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'
           />
         </div>
-        {/* <div
-          style={{
-            marginTop: 50,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        > */}
-          <ShowListItem />
+      </div>
+        
+      <ShowListItem />
         {/* </div> */}
 
         <ContactForm />
