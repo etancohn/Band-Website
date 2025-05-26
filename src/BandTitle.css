@@ -1,23 +1,23 @@
 
 
 .bandName {
-    height: 18vh;
+    width: 500px;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .bandName {
-        height: 16vh;
+        height: 16vw;
     }
 }
 
 @media (max-width: 600px) {
     .bandName {
-        height: 14vh;
+        height: 28vw;
     }
-}
+} */
 
 @media (max-width: 500px) {
     .bandName {
-        height: 12vh;
+        width: 80vw;
     }
 }
