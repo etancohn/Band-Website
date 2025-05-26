@@ -39,7 +39,7 @@ function BandTitle() {
                     // stroke='white'
                     stroke={titleColor}
                     // stroke="#000"
-                    strokeWidth="2"
+                    strokeWidth="1"
                     fill="transparent"
                     />
                 ))}
