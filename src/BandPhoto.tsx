@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bandPhoto from "./assets/band-photo.jpg";
+import bandPhoto from "./assets/band-photo-1.jpg";
 
 function BandPhoto() {
     const photoVariants = {
@@ -16,6 +16,7 @@ function BandPhoto() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '88%',
+        // height: '20%',
         // height: '100%',
         // backgroundColor: 'red'
         // marginBottom: 100,
@@ -29,7 +30,9 @@ function BandPhoto() {
           animate="animate"
           style={{
             // height: '95%',
-            width: '93%',
+            // width: '93%',
+            marginTop: -50,
+            width: '60%',
             borderRadius: 10,
             // boxShadow: '0px 2px 5px rgba(58, 58, 58, 0.5)',
             boxShadow: '0px 2px 5px rgba(200, 200, 200, 0.1)', /* Example light gray shadow */

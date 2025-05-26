@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { titleColor } from './Colors';
-import  { bostonBriggsPathsData, kateNRosesPathsData } from './assets/pathsData.tsx'
+import  { kateNRosesPathsData } from './assets/pathsData.tsx'
 
 function BandTitle() {
     
