@@ -83,7 +83,7 @@ function ParticlesBackground() {
                     value: 200,         // Number of polygons
                 },
                 opacity: {
-                  value: {min: 0.3, max: 0.6}, // <<< Low and variable opacity
+                  value: {min: 0.32, max: 0.62}, // <<< Low and variable opacity
                     // value: 0.5,       // Base opacity of polygons
                 },
                 shape: {
