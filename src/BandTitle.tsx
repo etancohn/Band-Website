@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { titleColor } from './Colors';
-import  { kateNRosesPathsData } from './assets/pathsData.tsx'
+import  { kateNRosesPathsData } from './assets/pathsData.tsx';
+import './BandTitle.css';
 
 function BandTitle() {
     
