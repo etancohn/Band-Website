@@ -25,9 +25,10 @@ function BandTitle() {
     return (
             <svg 
                 // viewBox="0 0 207 72"
-                viewBox='0 0 240 60'
+                viewBox='0 0 238 60'
+                className="bandName"
                 // width={500}
-                height={'18vh'}
+                // height={'18vh'}
             > {/* Adjust viewBox based on your SVG */}
                 {kateNRosesPathsData.map((path, index) => (
                   <motion.path

@@ -32,8 +32,11 @@ function BandPhoto() {
             // height: '95%',
             // width: '93%',
             marginTop: -70,
-            height: '100%',
-            // width: '60%',
+            // height: '100%',
+            objectFit: "cover",
+            objectPosition: 'center',
+            width: '95%',
+            maxWidth: 700,
             borderRadius: 10,
             // boxShadow: '0px 2px 5px rgba(58, 58, 58, 0.5)',
             boxShadow: '0px 2px 5px rgba(200, 200, 200, 0.1)', /* Example light gray shadow */
