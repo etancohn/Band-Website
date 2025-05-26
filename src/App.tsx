@@ -85,7 +85,7 @@ function App() {
         }} data-aos="zoom-in"
         >
           <SoundCloudPlaylist
-            playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
+            playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'
           />
         </div>
         {/* <div
