@@ -24,7 +24,7 @@ function BandTitle() {
     return (
             <svg 
                 // viewBox="0 0 207 72"
-                viewBox='0 0 250 72'
+                viewBox='0 0 240 60'
                 // width={500}
                 height={'18vh'}
             > {/* Adjust viewBox based on your SVG */}
