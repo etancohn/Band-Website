@@ -43,7 +43,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
             transition: 'transform 0.3s ease-in-out',
           }}
         ></Avatar>
-        <Box
+        {/* <Box
           className="overlay"
           sx={{
             position: 'absolute',
@@ -64,7 +64,7 @@ const BandMemberCard = (props: BandMemberCardProps) => {
           }}
         >
           <Typography variant="body2">{props.funFact}</Typography>
-        </Box>
+        </Box> */}
         <Box sx={{ textAlign: 'center', mt: 0.5, mb: 0, lineHeight: 0.8 }}>
           <Typography 
             variant="subtitle1" 
