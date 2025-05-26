@@ -1,29 +1,29 @@
-// import React from 'react'
 import { motion } from 'framer-motion';
 import './ShowListItem.css';
-// import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import { useEffect } from 'react';
-// import Typography from '@mui/material/Typography';
 import { mainColor, shadowColor } from './Colors';
 
-const showsData = [
+type Show = {
+    date: string,
+    name: string,
+    city: string,
+    link: string,
+}
+
+const showsData: Show[] = [
     {
-    //   date: '2025-05-11',
       date: 'May 10, 2025',
       name: 'Porchfest',
       city: 'Somerville, MA',
       link: '#',
     },
     {
-    //   date: '2025-06-23',
       date: 'Date TBD',
       name: 'The Lilypad',
       city: 'Cambridge, MA',
       link: '#',
     },
     {
-    //   date: '2025-07-15',
       date: 'Date TBD',
       name: 'The Lilypad',
       city: 'Cambridge, MA',
@@ -31,6 +31,8 @@ const showsData = [
     },
     // Add more show data here
 ];
+
+const showsData2: Show[] = [];
 
 function ShowListItem() {
     const headerVariants = {
@@ -69,7 +71,19 @@ function ShowListItem() {
         </motion.h2>
         </div>
         <ul className="showList">
-        {showsData.map((show, index) => (
+        {
+            showsData2?.length == 0 ?
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: 200,
+                    fontSize: 19,
+                    fontStyle: 'italic',
+                }}
+            >No shows coming up. Check back soon!</div> :
+            showsData2?.map((show, index) => (
             <li 
                 key={index} 
                 className="showItem"
