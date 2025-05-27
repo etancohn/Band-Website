@@ -34,7 +34,7 @@ export const SoundCloudPlaylist = (props: SoundCloudPlaylistProps) => {
   return <ReactPlayer 
     url={playlistUrl} 
     // height="330px" 
-    width={isMobile ? 320 : isIpad ? 450 : 650}
+    width={isMobile ? 330 : isIpad ? 450 : 650}
     // className="soundcloud-playlist"
     config={{
         soundcloud: {
