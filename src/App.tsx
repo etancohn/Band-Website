@@ -92,7 +92,7 @@ function App() {
               whileInView="animate"
               viewport={{ once: false }}
               style={{
-                  fontSize: '2.6rem',
+                  fontSize: '2.8rem',
                   color: mainColor,
               }}
           >

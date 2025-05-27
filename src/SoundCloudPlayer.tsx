@@ -29,11 +29,12 @@ interface SoundCloudPlaylistProps {
 
 export const SoundCloudPlaylist = (props: SoundCloudPlaylistProps) => {
   const { playlistUrl } = props;
+  const isIpad = useMediaQuery('(max-width:800px)');
   const isMobile = useMediaQuery('(max-width:600px)');
   return <ReactPlayer 
     url={playlistUrl} 
     // height="330px" 
-    width={isMobile ? 400 : 600}
+    width={isMobile ? 350 : isIpad ? 500 : 650}
     // className="soundcloud-playlist"
     config={{
         soundcloud: {
