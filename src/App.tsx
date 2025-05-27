@@ -78,7 +78,7 @@ function App() {
 
         <div
           style={{
-            width: '50%',
+            // width: '20%',
             marginTop: 130,
             display: 'flex',
             justifyContent: 'center',
@@ -92,20 +92,21 @@ function App() {
               whileInView="animate"
               viewport={{ once: false }}
               style={{
-                  fontSize: '3rem',
+                  fontSize: '2.6rem',
                   color: mainColor,
               }}
           >
               Demo Tracks
         </motion.h2>
         <div style={{ 
-          // width: '50%',
+          // width: '20%',
           // marginTop: 130, 
           marginBottom: 20,
           minWidth: 330,
           // display: 'flex',
           // justifyContent: 'center',
-        }} data-aos="zoom-in"
+        }} 
+        data-aos="zoom-in"
         >
           <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'

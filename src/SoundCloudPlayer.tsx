@@ -1,5 +1,7 @@
 import ReactPlayer from "react-player";
 import { SoundCloudConfig } from "react-player/soundcloud";
+import './SoundCloudPlayer.css';
+import { useMediaQuery } from '@mui/material';
 
 interface SoundCloudProps {
   trackUrl: string;
@@ -27,9 +29,12 @@ interface SoundCloudPlaylistProps {
 
 export const SoundCloudPlaylist = (props: SoundCloudPlaylistProps) => {
   const { playlistUrl } = props;
+  const isMobile = useMediaQuery('(max-width:600px)');
   return <ReactPlayer 
     url={playlistUrl} 
     // height="330px" 
+    width={isMobile ? 400 : 600}
+    // className="soundcloud-playlist"
     config={{
         soundcloud: {
           options: {
