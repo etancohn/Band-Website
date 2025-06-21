@@ -12,23 +12,29 @@ type Show = {
 
 const showsData: Show[] = [
     {
-      date: 'May 10, 2025',
-      name: 'Porchfest',
-      city: 'Somerville, MA',
-      link: '#',
-    },
-    {
-      date: 'Date TBD',
-      name: 'The Lilypad',
-      city: 'Cambridge, MA',
-      link: '#',
-    },
-    {
-      date: 'Date TBD',
-      name: 'The Lilypad',
-      city: 'Cambridge, MA',
-      link: '#',
-    },
+        date: "July 19, 2025",
+        name: "Cambridge Porchfest",
+        city: "Cambridge, MA",
+        link: "https://docs.google.com/document/d/1p-bnth_EKAc4eE5TF5_5GXHx8iaG4bRa/edit",
+    }
+    // {
+    //   date: 'May 10, 2025',
+    //   name: 'Porchfest',
+    //   city: 'Somerville, MA',
+    //   link: '#',
+    // },
+    // {
+    //   date: 'Date TBD',
+    //   name: 'The Lilypad',
+    //   city: 'Cambridge, MA',
+    //   link: '#',
+    // },
+    // {
+    //   date: 'Date TBD',
+    //   name: 'The Lilypad',
+    //   city: 'Cambridge, MA',
+    //   link: '#',
+    // },
     // Add more show data here
 ];
 
@@ -72,7 +78,7 @@ function ShowListItem() {
         </div>
         <ul className="showList">
         {
-            showsData2?.length == 0 ?
+            showsData?.length == 0 ?
             <div
                 style={{
                     display: 'flex',
@@ -83,7 +89,7 @@ function ShowListItem() {
                     fontStyle: 'italic',
                 }}
             >No shows coming up. Check back soon!</div> :
-            showsData2?.map((show, index) => (
+            showsData?.map((show, index) => (
             <li 
                 key={index} 
                 className="showItem"
@@ -107,6 +113,7 @@ function ShowListItem() {
                     }}
                     whileHover={{ scale: 1.05 }} // Define the scale animation on hover
                     transition={{ duration: 0.2 }} // Add a smooth transition
+                    onClick={() => window.location.href = show.link}
                 >
                     Link
                 </motion.div>

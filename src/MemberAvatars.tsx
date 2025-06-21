@@ -1,9 +1,9 @@
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import etanImg from './assets/etan-headshot.jpg';
 import './MemberAvatars.css';
 import { mainColor, shadowColor } from './Colors';
+import { AvatarImages } from './assets/Images';
 // // @ts-ignore
 // import Images from './assets/Images.js';
 
@@ -103,7 +103,7 @@ function MemberAvatars() {
         {
             name: 'Adam',
             role: 'Guitar',
-            image: '#',
+            image: AvatarImages.adam,
             funFact: 'This is a fun fact about Adam.',
         },
         {
@@ -115,7 +115,7 @@ function MemberAvatars() {
         {
             name: 'Etan',
             role: 'Drums',
-            image: etanImg,
+            image: AvatarImages.etan,
             funFact: 'This is a fun fact about Etan.',
         },
     ];
