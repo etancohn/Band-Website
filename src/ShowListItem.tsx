@@ -38,7 +38,7 @@ const showsData: Show[] = [
     // Add more show data here
 ];
 
-const showsData2: Show[] = [];
+// const showsData2: Show[] = [];
 
 function ShowListItem() {
     const headerVariants = {
