@@ -109,7 +109,7 @@ function MemberAvatars() {
         {
             name: 'Alex',
             role: 'Bass & Backing Vocals',
-            image: '#',
+            image: AvatarImages.alex,
             funFact: 'This is a fun fact about Alex.',
         },
         {

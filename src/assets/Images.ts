@@ -1,8 +1,10 @@
 
 import etanImg from './etan-photo1.jpg';
 import adamImg from '../assets/adam-photo.jpg';
+import alexImg from '../assets/alex-photo.jpeg';
 
 export const AvatarImages = {
     etan: etanImg,
     adam: adamImg,
+    alex: alexImg,
 }
