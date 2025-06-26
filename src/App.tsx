@@ -1,5 +1,5 @@
 import './App.css';
-import { SoundCloudPlaylist } from './SoundCloudPlayer';
+// import { SoundCloudPlaylist } from './SoundCloudPlayer';
 import MemberAvatars from './MemberAvatars';
 import ParticlesBackground from './ParticlesBackground';
 import BandTitle from './BandTitle';
