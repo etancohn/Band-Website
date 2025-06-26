@@ -108,9 +108,19 @@ function App() {
         }} 
         data-aos="zoom-in"
         >
-          <SoundCloudPlaylist
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: 200,
+                    fontSize: 19,
+                    fontStyle: 'italic',
+                }}
+            >No demo tracks yet. Check back soon!</div> 
+          {/* <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'
-          />
+          /> */}
         </div>
       </div>
         
