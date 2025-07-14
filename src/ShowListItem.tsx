@@ -11,12 +11,12 @@ type Show = {
 }
 
 const showsData: Show[] = [
-    {
-        date: "July 19, 2025",
-        name: "Cambridge Porchfest",
-        city: "Cambridge, MA",
-        link: "https://docs.google.com/document/d/1p-bnth_EKAc4eE5TF5_5GXHx8iaG4bRa/edit",
-    }
+    // {
+    //     date: "July 19, 2025",
+    //     name: "Cambridge Porchfest",
+    //     city: "Cambridge, MA",
+    //     link: "https://docs.google.com/document/d/1p-bnth_EKAc4eE5TF5_5GXHx8iaG4bRa/edit",
+    // }
     // {
     //   date: 'May 10, 2025',
     //   name: 'Porchfest',

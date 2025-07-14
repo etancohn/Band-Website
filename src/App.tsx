@@ -117,7 +117,7 @@ function App() {
                     fontSize: 19,
                     fontStyle: 'italic',
                 }}
-            >No demo tracks yet. Check back soon!</div> 
+            >No demo tracks yet.</div> 
           {/* <SoundCloudPlaylist
             playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'
           /> */}

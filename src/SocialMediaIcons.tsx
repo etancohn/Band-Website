@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { 
-    FaFacebook, 
+    // FaFacebook, 
     FaInstagram, 
-    FaYoutube, 
+    // FaYoutube, 
     // FaTiktok 
+    FaEnvelope
 } from 'react-icons/fa';
-import { BsSpotify } from 'react-icons/bs';
+// import { BsSpotify } from 'react-icons/bs';
 import { mainColor } from './Colors';
 
 function SocialMediaIcons() {
@@ -41,7 +42,7 @@ function SocialMediaIcons() {
             initial="hidden"
             animate="visible"
         >
-          <motion.a
+          {/* <motion.a
             href=""
             // href="https://facebook.com/yourband" // Replace with your actual link
             target="_blank"
@@ -52,9 +53,10 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <FaFacebook />
-          </motion.a>
+          </motion.a> */}
           <motion.a
-            href='#'
+            // href='#'
+            href='https://www.instagram.com/katieandtheroses/'
             // href="https://instagram.com/yourband" // Replace with your actual link
             target="_blank"
             rel="noopener noreferrer"
@@ -66,6 +68,19 @@ function SocialMediaIcons() {
             <FaInstagram />
           </motion.a>
           <motion.a
+            // href='#'
+            href='mailto:katieandtheroses@gmail.com'
+            // href="https://instagram.com/yourband" // Replace with your actual link
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            style={iconStyle}
+          >
+            <FaEnvelope />
+          </motion.a>
+          {/* <motion.a
             href="#"
             // href="https://spotify.com/artist/yourbandid" // Replace with your actual link
             target="_blank"
@@ -76,7 +91,7 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <BsSpotify />
-          </motion.a>
+          </motion.a> */}
           {/* <motion.a
             href='#'
             // href="https://instagram.com/yourband" // Replace with your actual link
@@ -89,7 +104,7 @@ function SocialMediaIcons() {
           >
             <FaTiktok />
           </motion.a> */}
-          <motion.a
+          {/* <motion.a
             href='#'
             // href="https://instagram.com/yourband" // Replace with your actual link
             target="_blank"
@@ -100,7 +115,7 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <FaYoutube />
-          </motion.a>
+          </motion.a> */}
           {/* Add more social media icons as needed */}
         </motion.div>
     );
