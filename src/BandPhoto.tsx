@@ -16,11 +16,6 @@ function BandPhoto() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '88%',
-        // height: '20%',
-        // height: '100%',
-        // backgroundColor: 'red'
-        // marginBottom: 100,
-        // height: 200,
       }}>
         <motion.img
           src={bandPhoto}

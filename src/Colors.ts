@@ -28,7 +28,6 @@ export const theme = createTheme({
     },
     palette: {
       primary: {
-        // main: 'red'
         main: mainColor, // Use your blue color in the palette
       },
       mode: 'dark',
