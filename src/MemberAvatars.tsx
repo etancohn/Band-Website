@@ -97,7 +97,7 @@ function MemberAvatars() {
         {
             name: 'Katelyn',
             role: 'Vocals & Piano',
-            image: '#',
+            image: AvatarImages.katelyn,
             funFact: 'This is a fun fact about Katelyn.',
         },
         {
