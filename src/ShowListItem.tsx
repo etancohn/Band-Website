@@ -11,6 +11,12 @@ type Show = {
 }
 
 const showsData: Show[] = [
+    {
+        date: "September 13th, 2025 @ 1-2pm",
+        name: "Roslindale Porchfest",
+        city: "Roslindale, MA",
+        link: "https://roslindaleporchfest.org/",
+    }
     // {
     //     date: "July 19, 2025",
     //     name: "Cambridge Porchfest",
