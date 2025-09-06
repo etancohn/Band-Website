@@ -75,11 +75,13 @@ function App() {
         <div data-aos="fade-right" data-aos-delay="200" style={{ marginTop: 75 }}>
           <MemberAvatars />
         </div>
-
+        
+      <ShowListItem />
+        {/* </div> */}
         <div
           style={{
             // width: '20%',
-            marginTop: 130,
+            // marginTop: 130,
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
@@ -99,12 +101,8 @@ function App() {
               Demo Tracks
         </motion.h2>
         <div style={{ 
-          // width: '20%',
-          // marginTop: 130, 
           marginBottom: 20,
           minWidth: 330,
-          // display: 'flex',
-          // justifyContent: 'center',
         }} 
         data-aos="zoom-in"
         >
@@ -123,9 +121,6 @@ function App() {
           /> */}
         </div>
       </div>
-        
-      <ShowListItem />
-        {/* </div> */}
 
         <ContactForm />
 

@@ -59,6 +59,7 @@ function ShowListItem() {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginTop: 130,
                 width: '100vw',
             }}
         >
