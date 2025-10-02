@@ -117,7 +117,8 @@ function ShowListItem() {
                         backgroundColor: mainColor,
                         border: `2px solid ${shadowColor}`,
                         boxShadow: `0 0 10px ${shadowColor}`,
-                        color: '#F5F5F5'
+                        // color: '#F5F5F5'
+                        color: 'black',
                     }}
                     whileHover={{ scale: 1.05 }} // Define the scale animation on hover
                     transition={{ duration: 0.2 }} // Add a smooth transition
