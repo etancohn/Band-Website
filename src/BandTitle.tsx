@@ -26,7 +26,7 @@ function BandTitle() {
         data-aos="fade-in"
         style={{
           marginTop: 20,
-          marginBottom: 100,
+          marginBottom: 65,
         }}
       >
         {/* <span style={{ 

@@ -104,8 +104,7 @@ function MemberAvatars() {
         {
             name: 'Simon',
             role: 'Keyboard',
-            image: undefined,
-            // image: AvatarImages.adam,
+            image: AvatarImages.simon,
             funFact: 'This is a fun fact about Simon.',
         },
         {
