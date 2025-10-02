@@ -1,35 +1,46 @@
-import { motion } from 'framer-motion';
-import { titleColor } from './Colors';
-import  { kateNRosesPathsData } from './assets/pathsData.tsx';
+// import { motion } from 'framer-motion';
+// import { titleColor } from './Colors';
+// import  { kateNRosesPathsData } from './assets/pathsData.tsx';
 import './BandTitle.css';
 
 function BandTitle() {
     
-    const pathVariants = {
-        hidden: {
-          pathLength: 0,
-          opacity: 0,
-        },
-        visible: {
-          pathLength: 1,
-          opacity: 1,
-          transition: {
-            duration: 2, // Adjust as needed
-            // ease: 'easeIn'
-            ease: "easeInOut",
-          },
-        //   springy: { scale: 1.2, transition: { type: "spring", stiffness: 150, damping: 15 } },
-        },
-    };
+    // const pathVariants = {
+    //     hidden: {
+    //       pathLength: 0,
+    //       opacity: 0,
+    //     },
+    //     visible: {
+    //       pathLength: 1,
+    //       opacity: 1,
+    //       transition: {
+    //         duration: 2, // Adjust as needed
+    //         ease: "easeInOut",
+    //       },
+    //     //   springy: { scale: 1.2, transition: { type: "spring", stiffness: 150, damping: 15 } },
+    //     },
+    // };
 
     return (
-            <svg 
+      <div 
+        data-aos="fade-in"
+        style={{
+          marginTop: 20,
+          marginBottom: 100,
+        }}
+      >
+        {/* <span style={{ 
+          justifyContent: 'center',
+          fontWeight: 'bold',
+          fontSize: '3rem',
+        }}>(Band Name)</span> */}
+          {/* <svg 
                 // viewBox="0 0 207 72"
                 viewBox='0 0 238 60'
                 className="bandName"
                 // width={500}
                 // height={'18vh'}
-            > {/* Adjust viewBox based on your SVG */}
+            >
                 {kateNRosesPathsData.map((path, index) => (
                   <motion.path
                     key={index}
@@ -45,7 +56,8 @@ function BandTitle() {
                     fill="transparent"
                     />
                 ))}
-            </svg>
+            </svg> */}
+      </div>
     )
 }
 
