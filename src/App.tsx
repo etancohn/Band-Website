@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 import { ThemeProvider } from '@mui/material/styles';
 import ContactForm from './ContactForm';
 import { mainColor, theme } from './Colors';
+import { SoundCloudPlaylist } from './SoundCloudPlayer';
 
 function App() {
 
@@ -106,7 +107,7 @@ function App() {
         }} 
         data-aos="zoom-in"
         >
-            <div
+            {/* <div
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -115,10 +116,10 @@ function App() {
                     fontSize: 19,
                     fontStyle: 'italic',
                 }}
-            >No demo tracks yet.</div> 
-          {/* <SoundCloudPlaylist
-            playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/katie-and-the-roses'
-          /> */}
+            >No demo tracks yet.</div>  */}
+          <SoundCloudPlaylist
+            playlistUrl='https://soundcloud.com/etan-cohn-996334839/sets/boston-band'
+          />
         </div>
       </div>
 

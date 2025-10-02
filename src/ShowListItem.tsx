@@ -13,28 +13,29 @@ type Show = {
 const showsData: Show[] = [
     {
         date: "September 13th, 2025 @ 1-2pm",
-        name: "Roslindale Porchfest",
+        name: "Cantab Lounge",
         city: "Roslindale, MA",
-        link: "https://roslindaleporchfest.org/",
-    }
-    // {
-    //     date: "July 19, 2025",
-    //     name: "Cambridge Porchfest",
-    //     city: "Cambridge, MA",
-    //     link: "https://docs.google.com/document/d/1p-bnth_EKAc4eE5TF5_5GXHx8iaG4bRa/edit",
-    // }
+        link: "",
+        // link: "https://roslindaleporchfest.org/",
+    },
+    {
+        date: "July 19, 2025",
+        name: "Cambridge Porchfest",
+        city: "Cambridge, MA",
+        link: "https://docs.google.com/document/d/1p-bnth_EKAc4eE5TF5_5GXHx8iaG4bRa/edit",
+    },
     // {
     //   date: 'May 10, 2025',
     //   name: 'Porchfest',
     //   city: 'Somerville, MA',
     //   link: '#',
     // },
-    // {
-    //   date: 'Date TBD',
-    //   name: 'The Lilypad',
-    //   city: 'Cambridge, MA',
-    //   link: '#',
-    // },
+    {
+      date: 'Date TBD',
+      name: 'The Lilypad',
+      city: 'Cambridge, MA',
+      link: '#',
+    },
     // {
     //   date: 'Date TBD',
     //   name: 'The Lilypad',

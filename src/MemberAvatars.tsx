@@ -10,7 +10,7 @@ import { AvatarImages } from './assets/Images';
 type BandMemberCardProps = {
     name: string, 
     role: string, 
-    image: string, 
+    image?: string, 
     funFact: string,
 }
 
@@ -95,20 +95,29 @@ const BandMemberCard = (props: BandMemberCardProps) => {
 function MemberAvatars() {
     const members = [
         {
-            name: 'Katelyn',
-            role: 'Vocals & Piano',
-            image: AvatarImages.katelyn,
-            funFact: 'This is a fun fact about Katelyn.',
+            name: 'Richie',
+            role: 'Vocals & Guitar',
+            image: undefined,
+            // image: AvatarImages.katelyn,
+            funFact: 'This is a fun fact about Richie.',
         },
         {
-            name: 'Adam',
-            role: 'Guitar',
-            image: AvatarImages.adam,
-            funFact: 'This is a fun fact about Adam.',
+            name: 'Simon',
+            role: 'Keyboard',
+            image: undefined,
+            // image: AvatarImages.adam,
+            funFact: 'This is a fun fact about Simon.',
         },
+        {
+          name: 'Stefan',
+          role: 'Bass',
+          image: undefined,
+          // image: AvatarImages.adam,
+          funFact: 'This is a fun fact about Stefan.',
+      },
         {
             name: 'Alex',
-            role: 'Bass & Backing Vocals',
+            role: 'Guitar',
             image: AvatarImages.alex,
             funFact: 'This is a fun fact about Alex.',
         },

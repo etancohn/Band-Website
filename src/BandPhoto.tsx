@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import bandPhoto from "./assets/band-photo-1.jpg";
+import bandPhoto from "./assets/band-stock-img.png";
+// import bandPhoto from "./assets/band-photo-1.jpg";
 
 function BandPhoto() {
     const photoVariants = {
@@ -19,7 +20,7 @@ function BandPhoto() {
       }}>
         <motion.img
           src={bandPhoto}
-          alt="Your Band"
+          alt="Band Photo"
           variants={photoVariants}
           initial="initial"
           animate="animate"

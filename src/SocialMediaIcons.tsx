@@ -4,10 +4,12 @@ import {
     FaInstagram, 
     // FaYoutube, 
     // FaTiktok 
-    FaEnvelope
+    FaEnvelope,
+    FaTiktok
 } from 'react-icons/fa';
 // import { BsSpotify } from 'react-icons/bs';
 import { mainColor } from './Colors';
+import { BsSpotify } from 'react-icons/bs';
 
 function SocialMediaIcons() {
     const iconVariants = {
@@ -55,8 +57,8 @@ function SocialMediaIcons() {
             <FaFacebook />
           </motion.a> */}
           <motion.a
-            // href='#'
-            href='https://www.instagram.com/katieandtheroses/'
+            href='#'
+            // href='https://www.instagram.com/katieandtheroses/'
             // href="https://instagram.com/yourband" // Replace with your actual link
             target="_blank"
             rel="noopener noreferrer"
@@ -68,9 +70,8 @@ function SocialMediaIcons() {
             <FaInstagram />
           </motion.a>
           <motion.a
-            // href='#'
-            href='mailto:katieandtheroses@gmail.com'
-            // href="https://instagram.com/yourband" // Replace with your actual link
+            href='#'
+            // href='mailto:katieandtheroses@gmail.com'
             target="_blank"
             rel="noopener noreferrer"
             variants={iconVariants}
@@ -80,7 +81,7 @@ function SocialMediaIcons() {
           >
             <FaEnvelope />
           </motion.a>
-          {/* <motion.a
+          <motion.a
             href="#"
             // href="https://spotify.com/artist/yourbandid" // Replace with your actual link
             target="_blank"
@@ -91,8 +92,8 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <BsSpotify />
-          </motion.a> */}
-          {/* <motion.a
+          </motion.a>
+          <motion.a
             href='#'
             // href="https://instagram.com/yourband" // Replace with your actual link
             target="_blank"
@@ -103,7 +104,7 @@ function SocialMediaIcons() {
             style={iconStyle}
           >
             <FaTiktok />
-          </motion.a> */}
+          </motion.a>
           {/* <motion.a
             href='#'
             // href="https://instagram.com/yourband" // Replace with your actual link

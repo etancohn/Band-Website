@@ -105,8 +105,8 @@ function ContactForm() {
             variant="contained" // Use contained for a filled button
             sx={{
               backgroundColor: mainColor,
-              // color: 'black',
-              color: '#F5F5F5',
+              color: 'black',
+              // color: '#F5F5F5',
               textDecoration: 'none',
               padding: '15px 0px',
               borderRadius: '5px',

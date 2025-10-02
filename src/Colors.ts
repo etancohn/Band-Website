@@ -2,13 +2,14 @@ import { createTheme } from "@mui/material";
 
 
 
-// export const mainColor = 'rgb(100, 215, 240)'; // #64d6f0   // ORIGINAL BLUE
+export const mainColor = 'rgb(100, 215, 240)'; // #64d6f0   // ORIGINAL BLUE
+// export const mainColor = '#E51A4C'; // KATIE AND THE ROSES RED
+
 // export const mainColor = 'rgb(234, 51, 135)';  // MOTION.DEV MAGENTA
-export const mainColor = '#E51A4C';
 // export const mainColor = '#8B0C2B';
 
-// export const shadowColor = '#3a3a3a';  // ORIGINAL GRAY OUTLINE AND PARTICLES 
-export const shadowColor = '#8B0C2B'
+export const shadowColor = '#3a3a3a';  // ORIGINAL GRAY OUTLINE AND PARTICLES 
+// export const shadowColor = '#8B0C2B'
 
 export const particleColor = '#3a3a3a';
 
